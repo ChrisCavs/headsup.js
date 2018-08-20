@@ -125,8 +125,6 @@ Consequently, it supports the following natively:
 * iOS Safari 7.1+
 * Android Browser 4.4+
 
-To add support for older browsers, consider including polyfills/shims for the APIs listed above. There are no plans to include any in the library, in the interest of file size.
-
 ## License
 
-[MIT](https://opensource.org/licenses/MIT). © 2017 Michael Cavalea
+[MIT](https://opensource.org/licenses/MIT). © 2017 Christopher Cavalea
