@@ -1,7 +1,7 @@
 {
   "name": "headsup.js",
   "version": "1.0.0",
-  "description": "A sticky header library, written in vanilla JS",
+  "description": "Sticky headers that hide on scroll.",
 
   "main": "dist/headsup.js",
 

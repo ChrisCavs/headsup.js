@@ -60,7 +60,7 @@ export default ({
     }
   }
 
-  document                                                // adjust the margin to make space for header
+  document                                                // adjust body margin to make space for header
     .body
     .style['margin-top'] = `${headerHeight()}px`
 
