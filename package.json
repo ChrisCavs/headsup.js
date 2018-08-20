@@ -4,18 +4,18 @@
   "description": "Sticky headers that hide on scroll.",
 
   "main": "dist/headsup.js",
+  "license": "MIT",
 
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "build": "rollup -c",
     "prepublish": "npm run build"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChrisCavs/headsup.js.git"
   },
+
   "keywords": [
     "sticky",
     "nav",
@@ -23,12 +23,13 @@
     "auto-hide",
     "hide"
   ],
-  "author": "Christopher Cavalea",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ChrisCavs/headsup.js/issues"
+
+  "author": {
+    "name": "Christopher Cavalea",
+    "email": "chriscavs94@gmail.com",
+    "url": "http://chriscavs.github.io/"
   },
-  "homepage": "https://github.com/ChrisCavs/headsup.js#readme",
+
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
