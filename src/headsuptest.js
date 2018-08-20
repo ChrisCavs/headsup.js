@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const styles = getComputedStyle(header)
 
   const headerHeight = () => {
+    // computes total height of the element
     const widthAndPadding = header.offsetHeight
     const marginTop = parseFloat(styles['margin-top'])
     const marginBot = parseFloat(styles['margin-bottom'])
@@ -13,23 +14,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const fixedShow = () => {
+    // fixes the elements position to top of page, visible
     Object.assign(header.style, {
       position: 'fixed',
       top: '0',
       left: '0',
-      transition: 'top 0.5s'
+      transition: 'top 0.3s'
     })
 
     show = true
   }
 
   const fixedHide = () => {
-    header.style.top = `-${headerHeight()}px`
+    // hides the element
+    header
+      .style
+      .top = `-${headerHeight()}px`
 
     show = false
   }
 
-  document.body.style['margin-top'] = `${headerHeight()}px`
+  document
+    .body
+    .style['margin-top'] = `${headerHeight()}px`
 
   fixedShow()
 
@@ -38,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', _ => {
     const current = window.pageYOffset
 
-    current > prev
+    current > prev && current >= headerHeight()
       ? show ? fixedHide() : null
       : show ? null : fixedShow()
     
