@@ -1,8 +1,8 @@
 export default ({
   selector = 'header',
-  duration = '0.3s',
+  duration = 0.3,
   easing = 'ease',
-  delay = '',
+  delay = 0,
   debounce = false
 } = {}) => {
 
@@ -68,7 +68,7 @@ export default ({
     position: 'fixed',
     top: '0',
     left: '0',
-    transition: `top ${duration} ${easing} ${delay}`
+    transition: `top ${duration}s ${easing} ${delay}s`
   })
 
   window.addEventListener('scroll', debounceFunc(debounce))
