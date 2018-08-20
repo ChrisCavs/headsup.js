@@ -3,7 +3,7 @@ export default ({
   duration = '0.3s',
   easing = 'ease',
   delay = '',
-  debouce = false
+  debounce = false
 } = {}) => {
 
   let show = true                                         // initial boolean value
@@ -46,8 +46,18 @@ export default ({
     prev = current
   }
 
-  const debounceFunc = ticks => {                             // debouncing function
+  const debounceFunc = wait => {                          // debouncing function
+    if (!wait) return onScrollFunction
 
+    let timeout = null
+    return () => {
+      if (!timeout) {
+        timeout = setTimeout(() => {
+          onScrollFunction()
+          timeout = null
+        }, wait)
+      }
+    }
   }
 
   document                                                // adjust the margin to make space for header
