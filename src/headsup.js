@@ -13,7 +13,9 @@ export default ({
   const styles = getComputedStyle(header)
 
   const headerHeight = () => {                            // computes total height of the element
-    const widthAndPadding = header.offsetHeight
+    const widthAndPadding = header
+      .getBoundingClientRect()
+      .height
     const marginTop = parseFloat(styles['margin-top'])
     const marginBot = parseFloat(styles['margin-bottom'])
 

@@ -112,19 +112,19 @@ headsUp({
 
 Heads-up depends on the following browser APIs:
 
-* [pageYOffset]()
-* [getComputedStyle]()
-* [offsetHeight]()
+* [pageYOffset](https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset)
+* [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+* [getBoundingClientRect](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
 
 Consequently, it supports the following natively:
 
-* Chrome 24+
-* Firefox 23+
-* Safari 6.1+
-* Opera 15+
-* IE 10+
-* iOS Safari 7.1+
-* Android Browser 4.4+
+* Chrome 1+
+* Firefox 3.5+
+* Safari 3.2+
+* Opera 10+
+* IE 9+
+* iOS Safari 4+
+* Android Browser 2+
 
 ## License
 
