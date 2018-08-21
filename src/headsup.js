@@ -41,7 +41,7 @@ export default ({
   const onScrollFunction = _ => {                         // performs logic on each scroll event
     const current = window.pageYOffset
 
-    current > prev && current >= headerHeight()
+    current > prev && current >= (headerHeight()/2)
       ? show ? fixedHide() : null
       : show ? null : fixedShow()
 
