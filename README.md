@@ -10,7 +10,8 @@ Follow these steps to get started:
 2. [Import](#import)
 4. [Review Options](#options)
 
-**Note: It is required that you use a css reset that clears user agent stylesheet margin/padding.  See here for an [example](https://meyerweb.com/eric/tools/css/reset/).
+**Note**: It is required that you use a css reset that clears user agent stylesheet margin/padding.
+See here for an [example](https://meyerweb.com/eric/tools/css/reset/).
 
 ### Install
 
@@ -127,4 +128,4 @@ Consequently, it supports the following natively:
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT). © 2017 Christopher Cavalea
+[MIT](https://opensource.org/licenses/MIT). © 2018 Christopher Cavalea
