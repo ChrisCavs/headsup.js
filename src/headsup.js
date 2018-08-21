@@ -69,7 +69,6 @@ export default ({
   Object.assign(header.style, {                           // assign fixed position and transition to header
     position: 'fixed',
     top: '0',
-    left: '0',
     transition: `top ${duration}s ${easing} ${delay}s`
   })
 
