@@ -5,12 +5,11 @@ export default ({
   delay = 0,
   debounce = false
 } = {}) => {
-
   let show = true                                         // initial boolean value
   let prev = window.pageYOffset                           // initial window position
 
   const header = document.querySelector(selector)
-  const styles = getComputedStyle(header)
+  const styles = window.getComputedStyle(header)
 
   const headerHeight = () => {                            // computes total height of the element
     const widthAndPadding = header
@@ -41,7 +40,7 @@ export default ({
   const onScrollFunction = _ => {                         // performs logic on each scroll event
     const current = window.pageYOffset
 
-    current > prev && current >= (headerHeight()/2)
+    current > prev && current >= (headerHeight() / 2)
       ? show ? fixedHide() : null
       : show ? null : fixedShow()
 

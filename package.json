@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "standard src/*.js"
   },
   "repository": {
     "type": "git",
