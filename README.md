@@ -2,6 +2,8 @@
 
 Sticky headers that hide on scroll.
 
+[See a demo.](https://chriscavs.github.io/headsup-demo/)
+
 ## Usage
 
 Follow these steps to get started:
