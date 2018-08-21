@@ -57,11 +57,9 @@ Explanation of each option follows:
 
 ### selector
 
-Any CSS selector that targets to your header element.
+Any CSS selector that targets to your header element.  It is recommended that you use the default semantic HTML tag.
 
 ```es6
-// apply 
-
 headsUp({
   target: '#header'
 })
