@@ -1,6 +1,6 @@
 # Heads-up.js
 
-[![headsup.js on NPM](https://img.shields.io/npm/v/headsup.js.svg?style=flat-square)](https://www.npmjs.com/package/headsup.js) [![headsup.js Downloads on NPM](https://img.shields.io/npm/dm/headsup.js.svg?style=flat-square)](https://www.npmjs.com/package/headsup.js) [![Standard JavaScript Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
+[![headsup.js on NPM](https://img.shields.io/npm/v/headsup.js.svg?style=flat-square)](https://www.npmjs.com/package/headsup.js) [![Standard JavaScript Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
 
 Sticky headers that hide on scroll.
 
