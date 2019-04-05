@@ -12,7 +12,7 @@ export default ({
   const header = document.querySelector(selector)
   const styles = window.getComputedStyle(header)
 
-  const body = document.body;
+  const body = document.body
 
   const headerHeight = () => {                            // computes total height of the element
     const widthAndPadding = header
