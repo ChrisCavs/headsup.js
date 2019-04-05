@@ -3,13 +3,16 @@ export default ({
   duration = 0.3,
   easing = 'ease',
   delay = 0,
-  debounce = false
+  debounce = false,
+  stickyBodyClass = 'header-is-stuck'
 } = {}) => {
   let show = true                                         // initial boolean value
   let prev = window.pageYOffset                           // initial window position
 
   const header = document.querySelector(selector)
   const styles = window.getComputedStyle(header)
+
+  const body = document.body;
 
   const headerHeight = () => {                            // computes total height of the element
     const widthAndPadding = header
@@ -26,6 +29,9 @@ export default ({
       .style
       .top = '0'
 
+    body
+      .classList.add(stickyBodyClass)
+
     show = true
   }
 
@@ -33,6 +39,9 @@ export default ({
     header
       .style
       .top = `-${headerHeight()}px`
+
+      body
+        .classList.remove(stickyBodyClass)
 
     show = false
   }
@@ -61,9 +70,11 @@ export default ({
     }
   }
 
-  document                                                // adjust body margin to make space for header
-    .body
-    .style['margin-top'] = `${headerHeight()}px`
+  body
+    .style['margin-top'] = `${headerHeight()}px` // adjust body margin to make space for header
+
+  body
+    .classList.add(stickyBodyClass)
 
   Object.assign(header.style, {                           // assign fixed position and transition to header
     position: 'fixed',

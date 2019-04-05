@@ -45,7 +45,8 @@ headsUp({
   duration: 0.3,
   easing: 'ease',
   delay: 0,
-  debounce: false
+  debounce: false,
+  stickyBodyClass = 'header-is-stuck'
 })
 ```
 
@@ -56,6 +57,7 @@ Explanation of each option follows:
 * [easing](#easing)
 * [delay](#delay)
 * [debounce](#debounce)
+* [stickyBodyClass](#stickyBodyClass)
 
 ### selector
 
@@ -109,6 +111,19 @@ When the user scrolls, a function is called to check whether it is necessary to 
 
 headsUp({
   debounce: 100
+})
+```
+
+### stickyBodyClass
+
+Applies a class to the `body` element when the sticky header is shown. This can be used to add special styles to other elements on the page.
+
+```es6
+
+// will add the class `is-stuck` to the body when the header is shown
+
+headsUp({
+  stickyBodyClass: 'is-stuck'
 })
 ```
 
